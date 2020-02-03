@@ -48,7 +48,6 @@ const baseNavItem = css`
   font-family: sans-serif;
   font-weight: bold;
   text-decoration: none;
-  white-space: nowrap;
 `
 
 const DonateButton = styled.a`

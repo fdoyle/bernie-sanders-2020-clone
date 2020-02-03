@@ -1,3 +1,5 @@
+import { addParameters } from "@storybook/react"
+import { INITIAL_VIEWPORTS } from "@storybook/addon-viewport"
 import { configure } from "@storybook/react"
 import { action } from "@storybook/addon-actions"
 // automatically import all files ending in *.stories.js
@@ -14,3 +16,10 @@ global.__PATH_PREFIX__ = ""
 window.___navigate = pathname => {
   action("NavigateTo:")(pathname)
 }
+
+
+addParameters({
+  viewport: {
+    viewports: INITIAL_VIEWPORTS,
+  },
+})
