@@ -7,6 +7,7 @@ import SEO from "../components/seo"
 import signUpTop from "../images/signup-top.jpg"
 import signUpBottom from "../images/signup-bottom.jpg"
 import SignUp from "../components/SignUp"
+import BernieTrumpPoll from "../components/BernieTrumpPoll"
 
 const IndexPage = () => (
   <Layout>
@@ -16,6 +17,7 @@ const IndexPage = () => (
         Not Me. <span>Us.</span>
       </h1>
     </SignUp>
+    <BernieTrumpPoll/>
     <h1>Hi people</h1>
     <p>Foo Bar Baz this is some content woooloooolooo</p>
 
