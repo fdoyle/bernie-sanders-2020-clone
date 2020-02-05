@@ -18,9 +18,6 @@ const IndexPage = () => (
       </h1>
     </SignUp>
     <BernieTrumpPoll/>
-    <h1>Hi people</h1>
-    <p>Foo Bar Baz this is some content woooloooolooo</p>
-
     <SignUp image={signUpBottom}>
       <h5>SIGN UP</h5>
       <h1>
