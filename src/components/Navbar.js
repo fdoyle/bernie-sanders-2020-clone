@@ -58,7 +58,7 @@ const DonateButton = styled.a`
   border-radius: 4px;
 `
 
-const ToggleMenuButton = styled(Link)`
+const ToggleMenuButton = styled.button`
   ${baseNavItem}
   background: transparent;
   border: none;
