@@ -42,6 +42,21 @@ const Drawer = styled.div`
   }
 `
 
+const CloseBackgroundButton = styled.div`
+  position: absolute;
+  top: 100%;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100vh;
+  height: 100vh;
+  transition: background-color .5s;
+
+  @media only screen and (min-width: ${drawerBreak}) {
+    display: none;
+  }
+`
+
 const baseNavItem = css`
   font-size: 18px;
   color: #0c2d42;
@@ -107,6 +122,13 @@ export default () => {
         />
       </Link>
       <Spacer></Spacer>
+      <CloseBackgroundButton
+        css={css`
+        background-color: ${isDrawerOpen ? "#00000070" : "#00000000"};
+          visibility: ${isDrawerOpen ? "auto" : "hidden"};
+        `}
+        onClick={() => setDrawerOpen(false)}
+      />
       <Drawer
         css={css`
           right: ${isDrawerOpen ? "0" : "-50%"};
@@ -123,8 +145,6 @@ export default () => {
     </Root>
   )
 }
-
-
 
 const DrawerContent = () => {
   return (
