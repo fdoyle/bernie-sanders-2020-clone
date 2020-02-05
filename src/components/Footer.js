@@ -35,16 +35,14 @@ const AddressSection = styled.div`
   min-width: 220px;
 `
 
-const PaidForSection = styled.div`
-  
-`
+const PaidForSection = styled.div``
 
 const BoxedSpan = styled.span`
   display: inline-block;
   margin: auto;
   padding: 10px 15px;
   border: solid 1px black;
-  text-align: center; 
+  text-align: center;
 `
 
 const RotatedSpan = styled.span`
@@ -52,10 +50,9 @@ const RotatedSpan = styled.span`
   margin-top: 10px;
   margin-bottom: 20px;
   font-size: 18px;
-  text-align: center; 
-   transform: rotate(-2deg);
-   color: #005F92;
-
+  text-align: center;
+  transform: rotate(-2deg);
+  color: #005f92;
 `
 
 export default () => {
@@ -189,7 +186,7 @@ const Links = () => {
   )
 }
 
-const NoBulletUnorderedList = styled.li`
+const NoBulletUnorderedList = styled.ul`
   list-style: none;
 `
 
