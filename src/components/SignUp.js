@@ -8,7 +8,6 @@ const breakMiddle = "750px"
 const BackgroundImage = styled.img`
   width: 100%;
   height: 300px;
-  background: red;
   object-fit: cover;
   @media only screen and (min-width: ${breakMiddle}) {
     grid-template-columns: 1fr 2fr;
