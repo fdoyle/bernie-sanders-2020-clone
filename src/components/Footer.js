@@ -126,19 +126,19 @@ const links = [
     title: "Social Media",
     links: [
       {
-        text: "Volunteer",
+        text: "Facebook",
         external: "https://www.facebook.com/berniesanders",
       },
       {
-        text: "Contribute",
+        text: "Twitter",
         external: "https://twitter.com/berniesanders",
       },
       {
-        text: "Events",
+        text: "Youtube",
         external: "https://www.youtube.com/channel/UCH1dpzjCEiGAt8CXkryhkZg",
       },
       {
-        text: "Store",
+        text: "Instagram",
         external: "https://instagram.com/berniesanders/",
       },
     ],
