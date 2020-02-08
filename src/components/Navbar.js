@@ -48,9 +48,9 @@ const CloseBackgroundButton = styled.div`
   bottom: 0;
   left: 0;
   right: 0;
-  width: 100vh;
+  width: 100vw;
   height: 100vh;
-  transition: background-color .5s;
+  transition: background-color 0.5s;
 
   @media only screen and (min-width: ${drawerBreak}) {
     display: none;
@@ -124,7 +124,7 @@ export default () => {
       <Spacer></Spacer>
       <CloseBackgroundButton
         css={css`
-        background-color: ${isDrawerOpen ? "#00000070" : "#00000000"};
+          background-color: ${isDrawerOpen ? "#00000070" : "#00000000"};
           visibility: ${isDrawerOpen ? "auto" : "hidden"};
         `}
         onClick={() => setDrawerOpen(false)}
