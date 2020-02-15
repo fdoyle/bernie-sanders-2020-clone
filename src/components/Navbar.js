@@ -25,8 +25,9 @@ const Spacer = styled.div`
 const Drawer = styled.div`
   background: white;
   position: absolute;
-  height: calc(100vh - 100%);
-  top: 100%;
+  // height: calc(100vh - 100%);
+  // top: 100%;
+
   right: 0;
   width: 50%;
   margin: 0;
@@ -129,13 +130,30 @@ export default () => {
         `}
         onClick={() => setDrawerOpen(false)}
       />
+      <div
+        css={css`
+        pointer-events: none;
+          position: absolute;
+          overflow: hidden;
+          top: 100%;
+          height: 100vh;
+          right: 0;
+          left: 0;
+        `
+        
+        }>
+        
       <Drawer
         css={css`
           right: ${isDrawerOpen ? "0" : "-50%"};
+          height: 100%;
+          pointer-events: auto;
         `}
       >
         <DrawerContent />
-      </Drawer>
+        </Drawer>
+        
+      </div>
       <DonateButton href="https://secure.actblue.com/donate/bern-site?refcode=splash-top-right">
         Donate
       </DonateButton>

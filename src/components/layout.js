@@ -34,9 +34,9 @@ const Layout = ({ children }) => {
           margin: `0 auto`,
         }}
       >
-        <DonateNowBanner/>
+        <DonateNowBanner />
         <main>{children}</main>
-        <Footer/>
+        <Footer />
       </div>
     </>
   )
